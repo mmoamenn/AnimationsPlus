@@ -9,6 +9,7 @@ import android.view.animation.DecelerateInterpolator;
 
 import com.bluehomestudio.animationplus.animation.HeightAnimation;
 import com.bluehomestudio.animationplus.animation.MarginAnimation;
+import com.bluehomestudio.animationplus.enums.ViewDirection;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,19 +20,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         view = findViewById(R.id.view);
-        final int startHeight = (int) DimensionsUtils.convertDpToPixel(100, this);
-        final int targetHeight = (int) DimensionsUtils.convertDpToPixel(400, this);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Animation animation = new MarginAnimation(view , null , 400);
+                Animation animation = new MarginAnimation(view , ViewDirection.TOP, 400);
                 animation.setInterpolator(new DecelerateInterpolator());
                 animation.setDuration(2000);
                 view.startAnimation(animation);
+
             }
         }, 1000);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                view.clearAnimation();
+                Animation animation1 = new MarginAnimation(view , ViewDirection.START, 400);
+                animation1.setInterpolator(new DecelerateInterpolator());
+                animation1.setDuration(2000);
+                view.startAnimation(animation1);
+            }
+        }, 2000);
+
     }
 }

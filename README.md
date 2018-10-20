@@ -19,7 +19,7 @@ A lightweight android library that provides extra native animations like margin,
  
  ```groovy
  	dependencies {
- 		compile 'com.github.mmoamenn:Assertive-Touch:1.2.0'
+ 		compile 'com.github.mmoamenn:AnimationsPlus:1.0.0'
  	}
  ```
 

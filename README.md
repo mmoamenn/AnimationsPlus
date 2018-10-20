@@ -2,6 +2,27 @@
 
 A lightweight android library that provides extra native animations like margin, padding, height and weight animations 
 
+**Installing**
+ 
+ Add it in your root build.gradle at the end of repositories:
+ 
+ ```groovy
+ 	allprojects {
+ 		repositories {
+ 			...
+ 			maven { url 'https://jitpack.io' }
+ 		}
+ 	}
+  ```
+ 	
+ Step 2. Add the dependency
+ 
+ ```groovy
+ 	dependencies {
+ 		compile 'com.github.mmoamenn:Assertive-Touch:1.2.0'
+ 	}
+ ```
+
 **How to use in your application**
 
 Height animation

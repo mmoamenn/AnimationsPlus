@@ -4,14 +4,14 @@ import android.view.View;
 import android.view.animation.Transformation;
 
 import com.bluehomestudio.animationplus.base.ParamsBaseAnimation;
-import com.bluehomestudio.animationplus.enums.ViewDirection;
+import com.bluehomestudio.animationplus.enums.AnimationDirection;
 
 public class MarginAnimation extends ParamsBaseAnimation {
 
     private int mMargin;
-    private ViewDirection mDirection;
+    private AnimationDirection mDirection;
 
-    public MarginAnimation(View view, ViewDirection direction, int margin) {
+    public MarginAnimation(View view, AnimationDirection direction, int margin) {
         super(view);
         mMargin = margin;
         mDirection = direction;
@@ -32,6 +32,9 @@ public class MarginAnimation extends ParamsBaseAnimation {
                 break;
             case TOP:
                 mParams.topMargin = newMargin;
+                break;
+            case ALL:
+                mParams.setMargins(newMargin, newMargin, newMargin, newMargin);
                 break;
         }
         mView.setLayoutParams(mParams);

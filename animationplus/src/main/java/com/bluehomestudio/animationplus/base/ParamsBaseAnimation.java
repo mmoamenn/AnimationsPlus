@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 public abstract class ParamsBaseAnimation extends BaseAnimation {
@@ -26,6 +27,8 @@ public abstract class ParamsBaseAnimation extends BaseAnimation {
             mParams = (ConstraintLayout.LayoutParams) view.getLayoutParams();
         } else if (parent instanceof FrameLayout) {
             mParams = (FrameLayout.LayoutParams) view.getLayoutParams();
+        }else if (parent instanceof LinearLayout ) {
+            mParams = (LinearLayout.LayoutParams) view.getLayoutParams();
         } else {
             mParams = null;
         }

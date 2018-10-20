@@ -2,9 +2,32 @@
 
 A lightweight android library that provides extra native animations like margin, padding, height and weight animations 
 
+**Installing**
+ 
+ Add it in your root build.gradle at the end of repositories:
+ 
+ ```groovy
+ 	allprojects {
+ 		repositories {
+ 			...
+ 			maven { url 'https://jitpack.io' }
+ 		}
+ 	}
+  ```
+ 	
+ Step 2. Add the dependency
+ 
+ ```groovy
+ 	dependencies {
+ 		compile 'com.github.mmoamenn:Assertive-Touch:1.2.0'
+ 	}
+ ```
+
 **How to use in your application**
 
 Height animation
+
+![Height animation](https://github.com/mmoamenn/AnimationsPlus/blob/master/samples/height.gif)
 
 ```java
  HeightAnimation heightAnimation = new HeightAnimation(view , currentHight , targetHeight);
@@ -13,6 +36,8 @@ Height animation
 ```
 
 Width animtion
+
+![Height animation](https://github.com/mmoamenn/AnimationsPlus/blob/master/samples/width.gif)
 
 ```java
  WidthAnimation heightAnimation = new WidthAnimation(view , currentWidth , targetWidth);
@@ -30,6 +55,8 @@ Animation direction Options
 
 Padding Animation
 
+![Height animation](https://github.com/mmoamenn/AnimationsPlus/blob/master/samples/padding.gif)
+
 ```java
 PaddingAnimation paddingAnimation = new PaddingAnimation(view, AnimationDirection.ALL, currentPadding, targetPadding);
 paddingAnimation.setDuration(TIME);
@@ -38,8 +65,10 @@ view.startAnimation(paddingAnimation);
 
 Margin Animation
 
+![Height animation](https://github.com/mmoamenn/AnimationsPlus/blob/master/samples/margin.gif)
+
 ```java
-MarginAnimation marginAnimation = new MarginAnimation(view, AnimationDirection.ALL, 100);
+MarginAnimation marginAnimation = new MarginAnimation(view, AnimationDirection.START, 100);
 marginAnimation.setDuration(TIME);
 view.startAnimation(marginAnimation);
 ```

@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         view = findViewById(R.id.view);
 
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

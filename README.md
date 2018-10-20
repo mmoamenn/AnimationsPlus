@@ -52,7 +52,7 @@ animationSet.addAnimation(marginAnimation);
 animationSet.addAnimation(paddingAnimation);
 animationSet.addAnimation(sacleAnimation);
 animationSet.addAnimation(transetionAnimation);
-animationSet.satrt();
+animationSet.start();
 ```
 
 

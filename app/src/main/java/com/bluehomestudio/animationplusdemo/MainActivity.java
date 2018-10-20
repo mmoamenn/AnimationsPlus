@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                PaddingAnimation heightAnimation = new PaddingAnimation(view, AnimationDirection.ALL  , 0, 100 );
-                heightAnimation.setDuration(1500);
-                view.startAnimation(heightAnimation);
+                PaddingAnimation paddingAnimation = new PaddingAnimation(view, AnimationDirection.ALL  , 0, 100 );
+                paddingAnimation.setDuration(1500);
+                view.startAnimation(paddingAnimation);
 
             }
         }, 2000);

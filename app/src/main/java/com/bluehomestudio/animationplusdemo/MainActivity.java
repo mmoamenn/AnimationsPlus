@@ -1,18 +1,14 @@
 package com.bluehomestudio.animationplusdemo;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.FrameLayout;
 
-import com.bluehomestudio.animationplus.animation.HeightAnimation;
-import com.bluehomestudio.animationplus.animation.MarginAnimation;
 import com.bluehomestudio.animationplus.animation.PaddingAnimation;
-import com.bluehomestudio.animationplus.animation.WidthAnimation;
 import com.bluehomestudio.animationplus.enums.AnimationDirection;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     FrameLayout view;
 

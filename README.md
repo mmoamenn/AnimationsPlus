@@ -4,7 +4,7 @@ A lightweight Android library that provides extra native animations like margin,
 
 **what's new in 1.1.0**
 
-Support Android X and kotlin tutorials.
+Support AndroidX and kotlin tutorials.
 
 **Installing**
  

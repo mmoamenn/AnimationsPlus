@@ -6,6 +6,10 @@ A lightweight Android library that provides extra native animations like margin,
 
 Support AndroidX and kotlin tutorials.
 
+**Note** 
+
+Last version before support AndroidX ```com.github.mmoamenn:AnimationsPlus:1.0.0```
+
 **Installing**
  
  Add it in your root build.gradle at the end of repositories:

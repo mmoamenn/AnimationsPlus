@@ -29,7 +29,7 @@ Height animation
 
 ![Height animation](https://github.com/mmoamenn/AnimationsPlus/blob/master/samples/height.gif)
 
-```koltin
+```kotlin
 val heightAnimation = HeightAnimation(view, currentHight, targetHeight)
 heightAnimation.duration = TIME
 view.startAnimation(heightAnimation)
@@ -67,7 +67,7 @@ Margin Animation
 
 ![Height animation](https://github.com/mmoamenn/AnimationsPlus/blob/master/samples/margin.gif)
 
-```koltin
+```kotlin
 val marginAnimation = MarginAnimation(view, AnimationDirection.START, 100)
 marginAnimation.duration = TIME
 view.startAnimation(marginAnimation)

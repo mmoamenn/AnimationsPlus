@@ -1,6 +1,10 @@
 # Animation Plus in Android
 
-A lightweight android library that provides extra native animations like margin, padding, height and weight animations 
+A lightweight Android library that provides extra native animations like margin, padding, height and weight animations 
+
+# what's new in 1.1.0
+
+Support Android X and kotlin tutorials 
 
 **Installing**
  
@@ -19,7 +23,7 @@ A lightweight android library that provides extra native animations like margin,
  
  ```groovy
  	dependencies {
- 		compile 'com.github.mmoamenn:AnimationsPlus:1.0.0'
+ 		compile 'com.github.mmoamenn:AnimationsPlus:1.1.0'
  	}
  ```
 
